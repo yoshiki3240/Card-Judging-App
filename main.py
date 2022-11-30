@@ -6,8 +6,7 @@ from tensorflow.keras.preprocessing import image
 
 import numpy as np
 
-
-classes = ["0","1","2","3","4","5","6","7","8","9"]
+classes = ["0","1","2","3","4"]
 image_size = 28
 
 UPLOAD_FOLDER = "uploads"
@@ -18,7 +17,7 @@ app = Flask(__name__)
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-model = load_model('./model.h5')#学習済みモデルをロード
+model = load_model('./my_new_model.h5')#学習済みモデルをロード
 
 
 @app.route('/', methods=['GET', 'POST'])
