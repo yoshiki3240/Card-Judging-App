@@ -18,9 +18,9 @@ header {
     margin: 15px 25px;
 }
 
-.header_img {
-    height: 25px;
-    margin: 15px 25px;
+.top_img {
+    display: flex;
+    justify-content: center;
 }
 
 body {
