@@ -23,6 +23,10 @@ header {
     margin: 15px 25px;
 }
 
+body {
+    background-color: #000000;
+}
+
 .main {
     color: #000000;
     height: 370px;
