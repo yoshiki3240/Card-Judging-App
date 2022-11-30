@@ -18,7 +18,7 @@ header {
     margin: 15px 25px;
 }
 
-.top_img {
+ul {
     display: flex;
     justify-content: center;
 }
