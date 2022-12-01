@@ -2,7 +2,7 @@ import os
 from flask import Flask, request, redirect, render_template, flash
 from werkzeug.utils import secure_filename
 from tensorflow.keras.models import Sequential, load_model
-from tensorflow.keras.preprocessing import image
+from tensorflow.keras.preprocessing  import image
 
 import numpy as np
 

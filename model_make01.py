@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt#グラフ可視化
 import pandas as pd
 
 import tensorflow
-from tensorflow.keras.utils import to_categorical #正解ラベルをone-hotベクトルで求める
+from keras.utils import to_categorical #正解ラベルをone-hotベクトルで求める
 from keras.layers import Dense, Dropout, Flatten, Input, Conv2D#全結合層、過学習予防、平滑化、インプット
 from keras.applications.vgg16 import VGG16 #学習済モデル
 from keras.models import Model, Sequential #線形モデル
