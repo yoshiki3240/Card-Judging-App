@@ -5,6 +5,7 @@ from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.preprocessing  import image
 
 import numpy as np
+import random
 
 classes = ["青眼の白龍(ブルーアイズ)","ブラックマジシャン","真紅眼の黒竜(レッドアイズ)","暗黒騎士ガイア","究極完全態・グレート・モス"]
 image_size = 50
@@ -44,7 +45,24 @@ def upload_file():
             #変換したデータをモデルに渡して予測する
             result = model.predict(data)[0]
             predicted = result.argmax()
-            pred_answer = "これは " + classes[predicted] + " です"
+            num = random.randint(0,60)
+            if num < 2:
+                result = "大吉"
+            elif 2 <= num < 10:
+                result = "中吉"
+            elif 10 <= num < 20:
+                result = "小吉"
+            elif 20 <= num < 40:
+                result = "吉"
+            elif 40 <= num < 50:
+                result = "末吉"
+            elif 50 <= num < 55:
+                result = "凶"
+            elif 55 <= num < 58:
+                result = "中凶"
+            else:
+                result = "大凶"
+            pred_answer = "これは " + classes[predicted] + " です" + "\n"+ "あなたの今日の運勢は" + result + "です"
 
             return render_template("index.html",answer=pred_answer)
 

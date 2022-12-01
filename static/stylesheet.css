@@ -52,6 +52,8 @@ p {
 
 form {
     color: #ffffff;
+    background: #fbffc2;/*背景色*/
+    padding: 0.5em;/*文字まわり（上下左右）の余白*/
     text-align: center;
 }
 
