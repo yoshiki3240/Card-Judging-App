@@ -45,15 +45,15 @@ p {
 }
 
 .answer {
-    color: #ffffff;
-    margin: 70px 0px 30px 0px;
-    text-align: center;
+    color: #fcf8f8;
+    padding: 1rem 2rem;
+    background: #094;
+    -webkit-box-shadow: 5px 5px 0 #007032;
+    box-shadow: 5px 5px 0 #007032;
 }
 
 form {
     color: #ffffff;
-    background: #fbffc2;/*背景色*/
-    padding: 0.5em;/*文字まわり（上下左右）の余白*/
     text-align: center;
 }
 
