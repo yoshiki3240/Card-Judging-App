@@ -1,8 +1,8 @@
 import os
 from flask import Flask, request, redirect, render_template, flash
 from werkzeug.utils import secure_filename
-from keras.models import Sequential, load_model
-from keras.preprocessing import image
+from tensorflow.keras.models import Sequential, load_model
+from tensowflow.keras.preprocessing import image
 
 import numpy as np
 
