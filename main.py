@@ -9,7 +9,7 @@ import numpy as np
 classes = ["青眼の白龍(ブルーアイズ)","ブラックマジシャン","真紅眼の黒竜(レッドアイズ)","暗黒騎士ガイア","究極完全態・グレート・モス"]
 image_size = 50
 
-UPLOAD_FOLDER = "./uploads"
+UPLOAD_FOLDER = "uploads"
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
 app = Flask(__name__)
@@ -18,7 +18,6 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 model = load_model('./my_new_model.h5')#学習済みモデルをロード
-
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
